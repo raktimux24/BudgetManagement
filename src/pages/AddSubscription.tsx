@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { SubscriptionForm } from '../components/subscription/SubscriptionForm';
 import { ImportOptions } from '../components/subscription/ImportOptions';
 import { SubscriptionLayout } from '../components/subscription/SubscriptionLayout';
-import { NotificationService } from '../services/NotificationService'; // Assuming this is where NotificationService is located
-import { useNavigate } from 'react-router-dom'; // Assuming you are using react-router-dom v6
+import { NotificationService } from '../services/notificationService'; 
+import { useNavigate } from 'react-router-dom'; 
 
 export function AddSubscription() {
   const navigate = useNavigate();
-  const user = null; // Assuming user is defined somewhere in your code
+  const user = null; 
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [error, setError] = React.useState(null);
   const [name, setName] = React.useState('');
